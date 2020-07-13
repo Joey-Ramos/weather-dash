@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.city-search {
+    width: 75%;
+}
+.card-content {
+    padding-left: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.forecast-card {
+    height: 175px;
+    width: 120px;
+    background-color: rgb(15, 107, 247);
+}
+.forecast-data {
+    color: white;
+}
+@media screen and (max-width: 768px ){
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .forecast-card {
+        height: 200px;
+        width: 100%;
+        align-items: center;
+        font-weight: bold;
+        font-size: large;
+    }
+}
+@media screen and (max-width: 375px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .forecast-card {
+        width: 100%;
+        align-items: center;
+    }
+}
