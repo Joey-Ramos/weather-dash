@@ -153,7 +153,7 @@ function displayWeatherForecast(forecastObj) {
 };
 
 // add searched cities to previous search container
-function storePastSearch () {
-  
-}
+
+
+
 citySearchBtn.addEventListener('click', citySearchHandler);
