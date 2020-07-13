@@ -26,7 +26,7 @@ var citySearchHandler = function(event) {
   // Fetch to Current Weather API
 var getCurrentWeatherByCity = function(cityName) {
     // fomat the OpenWeather api url
-    var apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" 
+    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" 
                     + cityName + 
                     "&appid=116af814ffcc819f9393605c81b75556";
 
@@ -53,7 +53,7 @@ function displayCurrentWeather(coordObj) {
     let innerHTML ='';
     innerHTML += `
     <div class="card-content">
-        <p><h3>${coordObj.name} ${coordObj.date} <img src="http://openweathermap.org/img/wn/${coordObj.icon}.png"></h3></p>
+        <p><h3>${coordObj.name} ${coordObj.date} <img src="https://openweathermap.org/img/wn/${coordObj.icon}.png"></h3></p>
         <p>Temperature: ${coordObj.temp} &deg F</p>
         <p>Humidity: ${coordObj.hum}%</p>
         <p>Wind Speed: ${coordObj.windspeed} MPH</p>
@@ -65,7 +65,7 @@ function displayCurrentWeather(coordObj) {
 
   // Fetch to 5 day forecast API
 function get5DayForecastByCity(cityName) {
-    var apiUrl = "http://api.openweathermap.org/data/2.5/forecast?q="
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q="
                     + cityName + 
                     "&appid=116af814ffcc819f9393605c81b75556";
     fetch(apiUrl)
@@ -110,7 +110,7 @@ function displayWeatherForecast(forecastObj) {
         <div class="card forecast-card">
             <div class="forecast-data">
                 <p>${forecastObj.dayOnedate}</p>
-                <img  src="http://openweathermap.org/img/wn/${forecastObj.dayOneicon}.png">
+                <img  src="https://openweathermap.org/img/wn/${forecastObj.dayOneicon}.png">
                 <p>Temp: ${forecastObj.dayOneTemp} &deg F</p>
                 <p>Humidity: ${forecastObj.dayOneHum}%</p>
             </div>
@@ -118,7 +118,7 @@ function displayWeatherForecast(forecastObj) {
         <div class="card forecast-card">
             <div class="forecast-data">
                 <p>${forecastObj.dayTwodate}</p>
-                <img  src="http://openweathermap.org/img/wn/${forecastObj.dayTwoicon}.png">
+                <img  src="https://openweathermap.org/img/wn/${forecastObj.dayTwoicon}.png">
                 <p>Temp: ${forecastObj.dayTwoTemp} &deg F</p>
                 <p>Humidity: ${forecastObj.dayTwoHum}%</p>
             </div>
@@ -126,7 +126,7 @@ function displayWeatherForecast(forecastObj) {
         <div class="card forecast-card">
             <div class="forecast-data">
                 <p>${forecastObj.dayThreedate}</p>
-                <img  src="http://openweathermap.org/img/wn/${forecastObj.dayThreeicon}.png">
+                <img  src="https://openweathermap.org/img/wn/${forecastObj.dayThreeicon}.png">
                 <p>Temp: ${forecastObj.dayThreeTemp} &deg F</p>
                 <p>Humidity: ${forecastObj.dayThreeHum}%</p>
             </div>
@@ -134,7 +134,7 @@ function displayWeatherForecast(forecastObj) {
         <div class="card forecast-card">
             <div class="forecast-data">
                 <p>${forecastObj.dayFourdate}</p>
-                <img  src="http://openweathermap.org/img/wn/${forecastObj.dayFouricon}.png">
+                <img  src="https://openweathermap.org/img/wn/${forecastObj.dayFouricon}.png">
                 <p>Temp: ${forecastObj.dayFourTemp} &deg F</p>
                 <p>Humidity: ${forecastObj.dayFourHum}%</p>
             </div>
@@ -142,7 +142,7 @@ function displayWeatherForecast(forecastObj) {
         <div class="card forecast-card">
             <div class="forecast-data">
                 <p>${forecastObj.dayFivedate}</p>
-                <img  src="http://openweathermap.org/img/wn/${forecastObj.dayFiveicon}.png">
+                <img  src="https://openweathermap.org/img/wn/${forecastObj.dayFiveicon}.png">
                 <p>Temp: ${forecastObj.dayFiveTemp} &deg F</p>
                 <p>Humidity: ${forecastObj.dayFiveHum}%</p>
             </div>
